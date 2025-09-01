@@ -21,7 +21,7 @@ const connection = new Client({
   user: 'gchat',
   host: 'dpg-coml2ja1hbls73f5n3k0-a.oregon-postgres.render.com',
   database: 'gchat',
-  password: '5Iw8L0X7E3tfthq7NCJgOcX8VVfk5baQ',
+  password: '',
   port: 5432, // Puerto predeterminado de PostgreSQL
   ssl: {
     rejectUnauthorized: false // Opciones adicionales para configurar SSL/TLS
@@ -39,7 +39,7 @@ app.use('/html',express.static('html'));
 app.use('/css',express.static('css'));
 app.use('/js',express.static('js'));
 app.use(session({
-  secret: 'HERDMYRPVF', // Clave secreta para firmar la cookie de sesión
+  secret: '', // Clave secreta para firmar la cookie de sesión
   resave: false, // No vuelvas a guardar la sesión si no hay cambios
   saveUninitialized: false // No guarde sesiones no inicializadas
 }));
